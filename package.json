@@ -8,10 +8,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/the-neutron-foundation/atom-langauge-neutron"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/the-neutron-foundation/atom-langauge-neutron/issues"
   },
   "license": "MIT"
 }
