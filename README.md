@@ -1,1 +1,2 @@
-atom-language-neutron
+# language-neutron
+An Atom syntax highlighting pack for Neutron.

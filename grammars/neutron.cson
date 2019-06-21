@@ -1,0 +1,93 @@
+'scopeName': 'source.ntn'
+'name': 'Neutron'
+'fileTypes': ['ntn']
+
+'patterns': [
+  {
+    'match': '\\d+'
+    'name': 'constant.numeric.neutron'
+  },
+  {
+    'match': '//.*'
+    'name': 'comment.line.double-slash'
+  },
+  {
+    'match': "\\d*\\.\\d+"
+    'name': 'constant.numeric.neutron'
+  },
+  {
+    'begin': '"'
+    'beginCaptures':
+        '0':
+            'name': 'punctuation.definition.string.begin.neutron'
+    'end': '"'
+    'endCaptures':
+        '0':
+            'name': 'punctuation.definition.string.end.neutron'
+    'name': 'string.quoted.double.neutron'
+  },
+  {
+    'begin': '`'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.neutron'
+    'end': '`'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.neutron'
+    'name': 'meta.python.neutron'
+    'patterns': [
+      {
+        'include': 'source.python'
+      }
+    ]
+  },
+  #{
+  #  'match': '=='
+  #  'name': 'keyword.operator.neutron'
+  #},
+  #{
+  #  'match': '!='
+  #  'name': 'keyword.operator.neutron'
+  #},
+  #{
+  #  'match': '=>'
+  #  'name': 'keyword.operator.neutron'
+  #},
+  #{
+  #  'match': '=<'
+  #  'name': 'keyword.operator.neutron'
+  #},
+  {
+    'match': '::'
+    'name': 'keyword.other.neutron'
+  },
+  {
+    'match': 'true'
+    'name': 'constant.language.neutron'
+  },
+  {
+    'match': 'false'
+    'name': 'constant.language.neutron'
+  },
+  {
+    'match': 'while'
+    'name': 'keyword.control.neutron'
+  },
+  {
+    'match': 'func'
+    'name': 'keyword.control.neutron'
+  },
+  {
+    'match': 'class'
+    'name': 'keyword.control.neutron'
+  },
+  {
+    'match': 'if'
+    'name': 'keyword.control.neutron'
+  },
+  {
+    'match': 'else'
+    'name': 'keyword.control.neutron'
+  }
+]
