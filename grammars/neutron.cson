@@ -79,6 +79,10 @@
     'name': 'keyword.control.neutron'
   },
   {
+    'match': 'break'
+    'name': 'keyword.control.neutron'
+  },
+  {
     'match': 'class'
     'name': 'keyword.control.neutron'
   },
