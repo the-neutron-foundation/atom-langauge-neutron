@@ -59,10 +59,6 @@
   #  'name': 'keyword.operator.neutron'
   #},
   {
-    'match': '::'
-    'name': 'keyword.other.neutron'
-  },
-  {
     'match': 'true'
     'name': 'constant.language.neutron'
   },
@@ -75,23 +71,66 @@
     'name': 'keyword.control.neutron'
   },
   {
-    'match': 'func'
-    'name': 'keyword.control.neutron'
-  },
-  {
-    'match': 'break'
-    'name': 'keyword.control.neutron'
-  },
-  {
-    'match': 'class'
-    'name': 'keyword.control.neutron'
-  },
-  {
     'match': 'if'
     'name': 'keyword.control.neutron'
   },
   {
     'match': 'else'
     'name': 'keyword.control.neutron'
-  }
+  },
+  {
+    'match': 'del'
+    'name': 'keyword.control.neutron'
+  },
+  {
+    'match': 'this'
+    'name': 'variable.language.neutron'
+  },
+  {
+    'match': '\\b(func)\\s+(--[a-zA-Z_]([a-zA-Z0-9_]|!)*--|[a-zA-Z_]([a-zA-Z0-9_]|!)*)\\s*\\('
+    'captures':
+        '1':
+            'name': 'keyword.control.neutron'
+        '2':
+            'name': 'entity.name.function.neutron'
+    'name': 'meta.function.neutron'
+  },
+  {
+    'match': '\\b(--[a-zA-Z_]([a-zA-Z0-9_]|!)*--|[a-zA-Z_]([a-zA-Z0-9_]|!)*)\\s*\\('
+    'captures':
+        '1':
+            'name': 'entity.name.function.neutron'
+    'name': 'meta.function.neutron'
+  },
+  {
+    'match': '\\b(class)\\s+(--[a-zA-Z_]([a-zA-Z0-9_]|!)*--|[a-zA-Z_]([a-zA-Z0-9_]|!)*)'
+    'captures':
+        '1':
+            'name': 'keyword.control.neutron'
+        '2':
+            'name': 'entity.name.type.neutron'
+    'name': 'meta.class.neutron'
+  },
+  {
+    'match': '\\b(--[a-zA-Z_]([a-zA-Z0-9_]|!)*--|[a-zA-Z_]([a-zA-Z0-9_]|!)*)\\s*(::)\\s*(--[a-zA-Z_]([a-zA-Z0-9_]|!)*--|[a-zA-Z_]([a-zA-Z0-9_]|!)*)'
+    'captures':
+        '1':
+            'name': 'entity.name.function.neutron'
+        '2':
+            'name': 'keyword.control.neutron'
+        '3':
+            'name': 'entity.name.function.neutron'
+    'name': 'meta.function.neutron'
+  },
+  {
+    'match': '\\b(--[a-zA-Z_]([a-zA-Z0-9_]|!)*--|[a-zA-Z_]([a-zA-Z0-9_]|!)*)\\s*(::)\\s*(--[a-zA-Z_]([a-zA-Z0-9_]|!)*--|[a-zA-Z_]([a-zA-Z0-9_]|!)*)\\s*\\('
+    'captures':
+        '1':
+            'name': 'entity.name.function.neutron'
+        '2':
+            'name': 'keyword.control.neutron'
+        '3':
+            'name': 'entity.name.function.neutron'
+    'name': 'meta.function.neutron'
+  },
 ]
