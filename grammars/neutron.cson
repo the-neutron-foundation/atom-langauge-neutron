@@ -83,6 +83,14 @@
     'name': 'keyword.control.neutron'
   },
   {
+    'match': 'in'
+    'name': 'keyword.control.neutron'
+  },
+  {
+    'match': 'for'
+    'name': 'keyword.control.neutron'
+  },
+  {
     'match': 'this'
     'name': 'variable.language.neutron'
   },
