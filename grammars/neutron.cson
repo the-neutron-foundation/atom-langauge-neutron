@@ -27,6 +27,17 @@
     'name': 'string.quoted.double.neutron'
   },
   {
+    'begin': '\''
+    'beginCaptures':
+        '0':
+            'name': 'punctuation.definition.string.begin.neutron'
+    'end': '\''
+    'endCaptures':
+        '0':
+            'name': 'punctuation.definition.string.end.neutron'
+    'name': 'string.quoted.single.neutron'
+  },
+  {
     'begin': '`'
     'beginCaptures':
       '0':
@@ -100,6 +111,10 @@
   },
   {
     'match': 'for'
+    'name': 'keyword.control.neutron'
+  },
+  {
+    'match': 'import'
     'name': 'keyword.control.neutron'
   },
   {
