@@ -118,6 +118,18 @@
     'name': 'keyword.control.neutron'
   },
   {
+    'match': 'limport'
+    'name': 'keyword.control.neutron'
+  },
+  {
+    'match': 'sandbox'
+    'name': 'keyword.control.neutron'
+  },
+  {
+    'match': 'impl'
+    'name': 'keyword.control.neutron'
+  },
+  {
     'match': 'this'
     'name': 'variable.language.neutron'
   },
